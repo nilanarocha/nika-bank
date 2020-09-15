@@ -1,10 +1,10 @@
-// classe abstrata
+// classe abstrata(nunca pode ser instanciada e sim herdada`)
 
 export class Conta {
   constructor(saldoInicial, cliente, agencia) {
     if (this.constructor == Conta) {
       throw new Error(
-        'voce nao deveria instanciar um objeto do tipo Conta diretamente'
+        'voce nao deveria instanciar um objeto do tipo Conta diretamente, pois ela é uma classe abstrata'
       );
     }
     this._saldo = saldoInicial;
