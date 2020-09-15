@@ -1,8 +1,8 @@
 // Ser autenticavel significa ter o método "autenticar" ;
 
-export class SistemaAutentificacao {
+export class SistemaAutenticacao {
   static login(autenticavel, senha) {
-    if (SistemaAutentificacao.eAutenticavel(autenticavel)) {
+    if (SistemaAutenticacao.eAutenticavel(autenticavel)) {
       return autenticavel.autenticar(senha);
     }
     return false;

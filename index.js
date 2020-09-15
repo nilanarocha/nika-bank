@@ -1,7 +1,7 @@
 import { Cliente } from './Cliente.js';
 import { Gerente } from './Funcionarios/Gerente.js';
 import { Diretor } from './Funcionarios/Diretor.js';
-import { SistemaAutentificacao } from './SistemaAutentificacao.js';
+import { SistemaAutenticacao } from './SistemaAutenticacao.js';
 
 const cliente1 = new Cliente('Ricardo', 11122233309, 465);
 
@@ -12,8 +12,8 @@ const diretor = new Diretor('Rodolfo', 5000, 23456789100);
 diretor.cadastrarSenha('123456');
 
 //polymorphism
-const gerenteEstaLogado = SistemaAutentificacao.login(gerente, '123');
-const diretorEstaLogado = SistemaAutentificacao.login(diretor, '123456');
-const cliente1EstaLogado = SistemaAutentificacao.login(cliente1, '456');
+const gerenteEstaLogado = SistemaAutenticacao.login(gerente, '123');
+const diretorEstaLogado = SistemaAutenticacao.login(diretor, '123456');
+const cliente1EstaLogado = SistemaAutenticacao.login(cliente1, '456');
 
 console.log(gerenteEstaLogado, diretorEstaLogado, cliente1EstaLogado);
