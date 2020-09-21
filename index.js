@@ -11,7 +11,6 @@ gerente.cadastrarSenha('123');
 const diretor = new Diretor('Rodolfo', 5000, 23456789100);
 diretor.cadastrarSenha('123456');
 
-//polymorphism
 const gerenteEstaLogado = SistemaAutenticacao.login(gerente, '123');
 const diretorEstaLogado = SistemaAutenticacao.login(diretor, '123456');
 const cliente1EstaLogado = SistemaAutenticacao.login(cliente1, '456');
